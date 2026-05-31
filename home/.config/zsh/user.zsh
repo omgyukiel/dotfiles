@@ -37,3 +37,9 @@ alias vim='nvim'
 alias vi='nvim'
 alias cls='clear'
 alias ls='eza'
+
+# Reset Waybar to a known-safe HyDE layout.
+res-waybar() {
+    hyde-shell waybar --kill
+    hyde-shell waybar --set hyprdots/01
+}
