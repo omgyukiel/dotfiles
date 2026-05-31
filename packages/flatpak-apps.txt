@@ -1,0 +1,6 @@
+com.google.Chrome
+com.valvesoftware.Steam
+com.visualstudio.code
+dev.vencord.Vesktop
+org.kde.gwenview
+org.videolan.VLC

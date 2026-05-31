@@ -1,0 +1,6 @@
+ddcui
+ddcui-debug
+uefitool-debug
+wttrbar
+wttrbar-debug
+yay-debug
