@@ -8,6 +8,7 @@ This repo intentionally tracks user-owned overrides, not the whole home director
 
 - `home/.config/hypr/userprefs.conf` - personal Hyprland overrides.
 - `home/.config/kitty/kitty.conf` - Kitty user config.
+- `home/.config/nvim` - LazyVim starter config and lockfile.
 - `home/.config/zsh/user.zsh` - HyDE Zsh user customizations.
 - `home/.tmux.conf` - tmux copy mode and terminal workflow.
 - `home/.config/waybar/user-style.css` - Waybar user CSS overrides.
@@ -78,3 +79,31 @@ For this HyDE setup, put aliases and shell customizations in:
 ```
 
 HyDE uses `ZDOTDIR=~/.config/zsh`, so `~/.zshrc` is not the best long-term place for portable aliases.
+
+## Neovim / LazyVim
+
+This repo tracks the LazyVim starter config at:
+
+```bash
+home/.config/nvim
+```
+
+Useful files:
+
+```bash
+~/.config/nvim/lua/config/options.lua
+~/.config/nvim/lua/config/keymaps.lua
+~/.config/nvim/lua/plugins/
+```
+
+Install the recommended CLI helpers:
+
+```bash
+sudo pacman -S --needed neovim ripgrep fd nodejs npm lazygit gcc make unzip
+```
+
+Sync LazyVim plugins:
+
+```bash
+nvim --headless "+Lazy! sync" +qa
+```

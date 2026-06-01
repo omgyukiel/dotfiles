@@ -104,8 +104,22 @@ hyprctl reload
 
 ```bash
 ~/.config/hypr/userprefs.conf
+~/.config/nvim/lua/config/keymaps.lua
+~/.config/nvim/lua/config/options.lua
 ~/.config/zsh/user.zsh
 ~/.config/kitty/kitty.conf
+```
+
+## LazyVim
+
+```text
+nvim              open editor
+Space Space       find files
+Space /           search text
+Space e           file explorer
+Space gg          LazyGit
+:Lazy sync        sync plugins
+:Mason            install language tools
 ```
 
 ## Current Personal Hyprland Overrides
