@@ -52,6 +52,20 @@ nvim .
 | `Space e` | File explorer |
 | `Space gg` | LazyGit |
 | `gcc` | Comment line |
+| `Space u m` | Toggle rendered Markdown in Neovim |
+| `Space c p` | Toggle Markdown browser preview |
+
+## Markdown Reading
+
+Markdown support is enabled through LazyVim's markdown extra.
+
+| Key | Action |
+|---|---|
+| `Space u m` | Toggle inline rendered Markdown |
+| `Space c p` | Open/close browser preview for current Markdown file |
+| `Space u w` | Toggle word wrap |
+
+Use inline rendering for reading docs inside Neovim. Use browser preview when you want a page-like view.
 
 ## Useful Files To Edit
 

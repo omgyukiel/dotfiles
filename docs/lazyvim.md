@@ -44,6 +44,18 @@ Inside Neovim:
 | `Space e` | file explorer |
 | `Space gg` | LazyGit |
 | `gcc` | comment line |
+| `Space u m` | toggle rendered Markdown |
+| `Space c p` | toggle Markdown browser preview |
+
+## Markdown Reading
+
+Markdown support is enabled through LazyVim's markdown extra.
+
+| Key | Action |
+|---|---|
+| `Space u m` | toggle inline rendered Markdown |
+| `Space c p` | open/close browser preview for current Markdown file |
+| `Space u w` | toggle word wrap |
 
 ## Dotfiles Location
 

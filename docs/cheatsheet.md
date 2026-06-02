@@ -127,6 +127,9 @@ Space Space       find files
 Space /           search text
 Space e           file explorer
 Space gg          LazyGit
+Space u m         toggle rendered Markdown
+Space c p         Markdown browser preview
+Space u w         toggle word wrap
 :Lazy sync        sync plugins
 :Mason            install language tools
 ```
