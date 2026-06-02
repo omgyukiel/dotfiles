@@ -94,6 +94,17 @@ Common Kitty defaults:
 | `CTRL + Shift + Backspace` | Reset font size |
 | `CTRL + Shift + H` | Show scrollback in pager |
 
+Kitty hints show a temporary label overlay so you can choose visible text without dragging the mouse.
+
+| Shortcut | Action |
+|---|---|
+| `CTRL + Shift + E` | Hint/open URL |
+| `CTRL + Shift + P`, then `L` | Pick a visible line and insert it |
+| `CTRL + Shift + P`, then `W` | Pick a visible word and insert it |
+| `CTRL + Shift + P`, then `F` | Pick a visible path and insert it |
+| `CTRL + Shift + P`, then `H` | Pick a visible hash and insert it |
+| `CTRL + Shift + P`, then `N` | Pick file:line and open it |
+
 Your `~/.config/kitty/kitty.conf` currently includes HyDE config and sets:
 
 - tab bar at bottom

@@ -73,6 +73,12 @@ fastfetch
 ```text
 CTRL + Shift + H      Kitty scrollback pager
 CTRL + Shift + /      Kitty scrollback search
+CTRL + Shift + E      Kitty URL hints
+CTRL + Shift + P, L   Kitty line hints
+CTRL + Shift + P, W   Kitty word hints
+CTRL + Shift + P, F   Kitty path hints
+CTRL + Shift + P, H   Kitty hash hints
+CTRL + Shift + P, N   Kitty file:line hints
 CTRL + B, [           tmux copy mode
 CTRL + B, |           tmux side-by-side split
 CTRL + B, -           tmux top/bottom split
@@ -142,6 +148,7 @@ SUPER + H/J/K/L = focus left/down/up/right
 SUPER + Shift + H/J/K/L = move window left/down/up/right
 SUPER + R, then H/J/K/L = resize left/down/up/right
 q/Escape/Enter = exit resize mode
+SUPER + CTRL + H/L = cycle backward/forward inside active group
 SUPER + CTRL + G, then H/J/K/L = group/move window left/down/up/right
 SUPER + CTRL + G, then O = move window out of group
 SUPER + CTRL + G, then T = lock/unlock active group
