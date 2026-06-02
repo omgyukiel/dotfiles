@@ -29,6 +29,7 @@
 | `SUPER + Shift + S` | Move window to scratchpad |
 | `SUPER + Alt + M` | Media control menu |
 | `SUPER + P` | Region screenshot |
+| screenshot notification `Open/Folder/Annotate/Copy path` | Act on saved screenshot |
 | `SUPER + V` | Clipboard |
 | `SUPER + Alt + L` | Lock |
 | `SUPER + Alt + K` | Keyboard layout |

@@ -7,6 +7,7 @@ This repo intentionally tracks user-owned overrides, not the whole home director
 ## What Is Tracked
 
 - `home/.config/hypr/userprefs.conf` - personal Hyprland overrides.
+- `home/.config/hyde/config.toml` - HyDE user config overrides.
 - `home/.config/kitty/kitty.conf` - Kitty user config.
 - `home/.config/nvim` - LazyVim starter config and lockfile.
 - `home/.config/swaync/config.json` - SwayNC notification center config.
@@ -14,7 +15,9 @@ This repo intentionally tracks user-owned overrides, not the whole home director
 - `home/.config/zsh/user.zsh` - HyDE Zsh user customizations.
 - `home/.tmux.conf` - tmux copy mode and terminal workflow.
 - `home/.config/waybar/user-style.css` - Waybar user CSS overrides.
+- `home/.config/waybar/layouts/workspace-media.jsonc` - custom HyDE Waybar layout.
 - `home/.local/bin/media-menu` - Rofi media controls backed by `playerctl`.
+- `home/.local/bin/screenshot-notify` - screenshot notification actions.
 - `packages/` - package manifests.
 - `docs/` - personal workflow notes.
 
@@ -24,7 +27,7 @@ This repo intentionally tracks user-owned overrides, not the whole home director
 - Login/session tokens.
 - `~/.cache`.
 - HyDE generated Wallbash output.
-- HyDE generated active Waybar layout/config files, except user CSS.
+- HyDE generated active Waybar config files, except tracked user CSS and custom layouts.
 - `~/.config/cfg_backups`.
 - Full app state for Spotify, Discord/Vesktop, Steam, etc.
 

@@ -157,6 +157,15 @@ Rofi workflow:
 | `SUPER + CTRL + P` | Freeze screen, then select region |
 | `SUPER + Alt + P` | Screenshot current monitor |
 | `Print` | Screenshot all monitors |
+
+Screenshot notifications show a thumbnail and actions:
+
+| Action | Result |
+|---|---|
+| `Open` | Open the saved image |
+| `Folder` | Show the file in the file manager |
+| `Annotate` | Reopen the screenshot in Satty |
+| `Copy path` | Copy the saved path to clipboard |
 | `SUPER + Shift + P` | Color picker, copies hex color |
 
 ## Theming And Wallpaper

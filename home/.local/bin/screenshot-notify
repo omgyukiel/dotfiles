@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+file="${1:-}"
+
+if [[ -z "$file" || ! -f "$file" ]]; then
+  exit 0
+fi
+
+dir="$(dirname -- "$file")"
+name="$(basename -- "$file")"
+
+action="$(
+  notify-send \
+    -a "Screenshot" \
+    -r 9 \
+    -t 10000 \
+    -i "$file" \
+    -A "open=Open" \
+    -A "folder=Folder" \
+    -A "annotate=Annotate" \
+    -A "copy-path=Copy path" \
+    "Screenshot saved" \
+    "$name"
+)" || exit 0
+
+case "$action" in
+  open)
+    xdg-open "$file" >/dev/null 2>&1 &
+    ;;
+  folder)
+    if command -v dbus-send >/dev/null 2>&1; then
+      dbus-send --session --dest=org.freedesktop.FileManager1 --type=method_call \
+        /org/freedesktop/FileManager1 org.freedesktop.FileManager1.ShowItems \
+        "array:string:file://$file" string:"" >/dev/null 2>&1 || xdg-open "$dir" >/dev/null 2>&1 &
+    else
+      xdg-open "$dir" >/dev/null 2>&1 &
+    fi
+    ;;
+  annotate)
+    if command -v satty >/dev/null 2>&1; then
+      satty -f "$file" -o "$file" --copy-command wl-copy >/dev/null 2>&1 &
+    else
+      xdg-open "$file" >/dev/null 2>&1 &
+    fi
+    ;;
+  copy-path)
+    printf '%s' "$file" | wl-copy
+    ;;
+esac

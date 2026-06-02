@@ -37,13 +37,16 @@ link_file() {
 }
 
 link_file "home/.config/hypr/userprefs.conf" "${home_dir}/.config/hypr/userprefs.conf"
+link_file "home/.config/hyde/config.toml" "${home_dir}/.config/hyde/config.toml"
 link_file "home/.config/kitty/kitty.conf" "${home_dir}/.config/kitty/kitty.conf"
 link_file "home/.config/nvim" "${home_dir}/.config/nvim"
 link_file "home/.config/swaync/config.json" "${home_dir}/.config/swaync/config.json"
 link_file "home/.config/swaync/style.css" "${home_dir}/.config/swaync/style.css"
 link_file "home/.config/zsh/user.zsh" "${home_dir}/.config/zsh/user.zsh"
 link_file "home/.config/waybar/user-style.css" "${home_dir}/.config/waybar/user-style.css"
+link_file "home/.config/waybar/layouts/workspace-media.jsonc" "${home_dir}/.config/waybar/layouts/workspace-media.jsonc"
 link_file "home/.local/bin/media-menu" "${home_dir}/.local/bin/media-menu"
+link_file "home/.local/bin/screenshot-notify" "${home_dir}/.local/bin/screenshot-notify"
 link_file "home/.tmux.conf" "${home_dir}/.tmux.conf"
 
 echo "done"
