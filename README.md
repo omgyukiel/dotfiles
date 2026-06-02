@@ -4,6 +4,8 @@ Personal Linux/HyDE configuration for ricing Hyprland. All the documents are AI 
 
 This repo intentionally tracks user-owned overrides, not the whole home directory and not generated HyDE state.
 
+Before installing on a new machine, read [PREREQUISITES.md](PREREQUISITES.md).
+
 ## What Is Tracked
 
 - `home/.config/hypr/userprefs.conf` - personal Hyprland overrides.
