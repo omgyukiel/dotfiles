@@ -37,6 +37,13 @@ alias vim='nvim'
 alias vi='nvim'
 alias cls='clear'
 alias ls='eza'
+alias srczsh='source ~/.config/zsh/user.zsh'
+
+# Smart directory jumping. Normal paths still work, and partial names jump
+# to the best matching directory after zoxide has learned your habits.
+if command -v zoxide >/dev/null; then
+    eval "$(zoxide init zsh --cmd cd)"
+fi
 
 # Reset Waybar to a known-safe HyDE layout.
 res-waybar() {

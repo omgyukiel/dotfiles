@@ -40,7 +40,7 @@ Hyprland does not create "panes" inside a terminal by default. It creates tiled 
 
 This machine now also has Vim-style focus navigation. Use `SUPER + H/J/K/L` as your primary window focus controls. The old arrow bindings are still available.
 
-For true terminal panes inside one terminal window, use `tmux` or Kitty layouts. For a beginner, learn Hyprland tiling first, then `tmux`.
+For true terminal panes inside one terminal window, use `tmux` as the default developer workspace. Kitty layouts are still useful for quick throwaway shells, but `tmux` is better for persistent project sessions that you can detach and reattach.
 
 ## Groups
 

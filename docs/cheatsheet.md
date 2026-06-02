@@ -60,17 +60,24 @@ rg "text" path
 ffcd
 ffe
 ffec text
+srczsh
+cd partial-name
+cdi partial-name
 btop
 duf
 fastfetch
 ```
 
-## Kitty And Tmux Copy
+## Kitty And Tmux
 
 ```text
 CTRL + Shift + H      Kitty scrollback pager
 CTRL + Shift + /      Kitty scrollback search
 CTRL + B, [           tmux copy mode
+CTRL + B, |           tmux side-by-side split
+CTRL + B, -           tmux top/bottom split
+CTRL + B, h/j/k/l     tmux pane focus
+ALT + h/j/k/l         tmux pane focus without prefix
 h/j/k/l               move in tmux copy mode
 v                     start tmux selection
 V                     select tmux line
@@ -87,6 +94,7 @@ pacman -Ss name      # search official repos
 yay -Ss name         # search official repos + AUR
 yay                  # update system + AUR
 sudo pacman -S name  # install official package
+sudo pacman -S --needed zoxide
 sudo pacman -Rns name
 ```
 
@@ -108,6 +116,7 @@ hyprctl reload
 ~/.config/nvim/lua/config/options.lua
 ~/.config/zsh/user.zsh
 ~/.config/kitty/kitty.conf
+~/.tmux.conf
 ```
 
 ## LazyVim

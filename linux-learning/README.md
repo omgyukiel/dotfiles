@@ -8,7 +8,7 @@ This folder is a practical map of your current Arch Linux + Hyprland + HyDE setu
 
 - [01-installed-packages.md](01-installed-packages.md) - what is installed, grouped by job.
 - [02-hyde-hyprland-workflows.md](02-hyde-hyprland-workflows.md) - desktop, windows, workspaces, screenshots, theming.
-- [03-terminal-kitty-zsh.md](03-terminal-kitty-zsh.md) - Kitty, shell editing, tabs, scrollback, command history.
+- [03-terminal-kitty-zsh.md](03-terminal-kitty-zsh.md) - Kitty, tmux, shell editing, tabs, scrollback, command history.
 - [04-cli-tools.md](04-cli-tools.md) - `rg`, `eza`, `bat`, `fzf`, `btop`, `pacman`, `yay`, and related tools.
 - [05-learning-roadmap.md](05-learning-roadmap.md) - drills and learning order.
 - [06-lazyvim.md](06-lazyvim.md) - Neovim/LazyVim setup, first commands, and dotfiles location.
@@ -21,6 +21,7 @@ This folder is a practical map of your current Arch Linux + Hyprland + HyDE setu
 - Your Hyprland overrides: `~/.config/hypr/userprefs.conf`
 - Kitty config: `~/.config/kitty/kitty.conf`
 - HyDE Kitty base config: `~/.config/kitty/hyde.conf`
+- tmux config: `~/.tmux.conf`
 - LazyVim config: `~/.config/nvim`
 - Zsh customizations: `~/.config/zsh/user.zsh`
 - HyDE config: `~/.config/hyde/config.toml`

@@ -53,6 +53,27 @@ Installed aliases/functions include:
 | `ffe` | Fuzzy edit file |
 | `ffec` | Fuzzy edit file by searching file contents |
 | `ffch` | Fuzzy command history search |
+| `srczsh` | Reload personal Zsh customizations |
+
+Smart `cd` is configured with `zoxide` when the package is installed:
+
+| Command | Action |
+|---|---|
+| `cd path` | Normal directory change |
+| `cd partial-name` | Jump to the best matching directory you have visited before |
+| `cdi partial-name` | Pick interactively from matching directories |
+
+Install it with:
+
+```bash
+sudo pacman -S --needed zoxide
+```
+
+After installing, open a new shell or run:
+
+```bash
+srczsh
+```
 
 ## Kitty Basics
 
@@ -97,11 +118,11 @@ There are three levels of organization:
 | Terminal tabs/splits | Kitty | Multiple shells in one terminal window |
 | Persistent terminal sessions | `tmux` | Keep long-running terminal layouts alive |
 
-Recommended beginner path:
+Recommended path:
 
-1. Use Hyprland tiling for multiple terminal windows.
-2. Use Kitty tabs when you want several shells in one visual terminal.
-3. Learn `tmux` after you are comfortable with basic terminal movement.
+1. Use Hyprland for desktop windows and workspaces.
+2. Use `tmux` as the default developer workspace inside Kitty.
+3. Use Kitty tabs/splits for quick throwaway shells, not long-running project layouts.
 
 Your Hyprland-level Vim window mappings use `SUPER + H/J/K/L`. These are compositor shortcuts, so they are not terminal text-editing shortcuts and should not interfere with normal Zsh, Vim, Neovim, or Kitty behavior inside the terminal.
 
@@ -123,6 +144,7 @@ Core shortcuts use prefix `CTRL + B`.
 | `CTRL + B`, then `-` | Top/bottom split |
 | `CTRL + B`, then arrow | Move between panes |
 | `CTRL + B`, then `h/j/k/l` | Move between panes with Vim directions |
+| `ALT + h/j/k/l` | Move between panes without prefix |
 | `CTRL + B`, then `x` | Close pane |
 | `CTRL + B`, then `c` | New tmux window |
 | `CTRL + B`, then `n/p` | Next/previous tmux window |
@@ -159,4 +181,5 @@ tmux source-file ~/.tmux.conf
 - Use `ls`/`eza` before destructive commands.
 - Prefer `mkdir -p folder/name` when creating nested folders.
 - Use Tab completion constantly.
+- Use `cd partial-name` after installing `zoxide` instead of typing long paths.
 - Use `CTRL + R` or `ffch` instead of retyping long commands.
