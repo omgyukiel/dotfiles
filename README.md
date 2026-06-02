@@ -1,6 +1,6 @@
 # Dotfiles
 
-Personal Linux/HyDE configuration.
+Personal Linux/HyDE configuration for ricing Hyprland. All the documents are AI generated, view /linux-learning to view key workflows and a cheat sheet of the keybindings.
 
 This repo intentionally tracks user-owned overrides, not the whole home directory and not generated HyDE state.
 
