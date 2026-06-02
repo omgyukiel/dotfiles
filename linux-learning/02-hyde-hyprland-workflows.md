@@ -120,6 +120,14 @@ Scratchpad is a hidden special workspace.
 
 Good uses: temporary terminal, notes, calculator, music player.
 
+HyDE also has a dedicated dropdown terminal:
+
+| Shortcut | Action |
+|---|---|
+| `SUPER + Alt + T` | Toggle dropdown terminal |
+
+Use the dropdown terminal for quick one-off commands. Use scratchpad when you want to hide/show any existing window, not only a terminal.
+
 ## Launchers And Menus
 
 | Shortcut | Action |
@@ -132,6 +140,7 @@ Good uses: temporary terminal, notes, calculator, music player.
 | `SUPER + comma` | Emoji picker |
 | `SUPER + period` | Glyph picker |
 | `SUPER + Shift + A` | Select Rofi launcher style |
+| `SUPER + Alt + M` | Media control menu |
 
 Rofi workflow:
 

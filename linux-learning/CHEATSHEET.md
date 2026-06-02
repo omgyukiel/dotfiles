@@ -6,6 +6,7 @@
 |---|---|
 | `SUPER + /` | Keybind help |
 | `SUPER + T` | Terminal |
+| `SUPER + Alt + T` | Dropdown terminal |
 | `SUPER + A` | App launcher |
 | `SUPER + E` | File manager |
 | `SUPER + B` | Browser |
@@ -26,6 +27,7 @@
 | `SUPER + Alt + 1..0` | Move window silently |
 | `SUPER + S` | Toggle scratchpad |
 | `SUPER + Shift + S` | Move window to scratchpad |
+| `SUPER + Alt + M` | Media control menu |
 | `SUPER + P` | Region screenshot |
 | `SUPER + V` | Clipboard |
 | `SUPER + Alt + L` | Lock |

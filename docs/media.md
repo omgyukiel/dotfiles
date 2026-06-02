@@ -20,12 +20,28 @@ playerctl --player=spotify previous
 playerctl --player=spotify metadata
 ```
 
+Desktop controls:
+
+| Shortcut | Action |
+|---|---|
+| `SUPER + Alt + M` | Open Rofi media control menu |
+| `XF86AudioPlay` / media play key | Play or pause |
+| `XF86AudioNext` | Next track |
+| `XF86AudioPrev` | Previous track |
+
+The notification center also shows an MPRIS media widget when a player is active:
+
+```bash
+swaync-client -t
+```
+
 HyDE has Spotify integration through:
 
 - `playerctl`
 - `spicetify-cli`
 - Wallbash Spotify theming
 - Waybar `custom/spotify` layouts
+- SwayNC MPRIS media widget
 
 ## Video Files
 

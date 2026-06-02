@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+player_status() {
+  if ! playerctl status >/dev/null 2>&1; then
+    printf 'No active player'
+    return
+  fi
+
+  local artist title status
+  artist="$(playerctl metadata --format '{{ artist }}' 2>/dev/null || true)"
+  title="$(playerctl metadata --format '{{ title }}' 2>/dev/null || true)"
+  status="$(playerctl status 2>/dev/null || true)"
+
+  if [[ -n "${artist}${title}" ]]; then
+    printf '%s - %s [%s]' "${artist:-Unknown artist}" "${title:-Unknown title}" "${status:-unknown}"
+  else
+    printf 'Media player [%s]' "${status:-unknown}"
+  fi
+}
+
+choice="$(
+  {
+    printf 'Play/Pause\n'
+    printf 'Next\n'
+    printf 'Previous\n'
+    printf 'Stop\n'
+    printf 'Open Spotify\n'
+    printf 'Toggle SwayNC\n'
+  } | rofi -dmenu -i -p "$(player_status)"
+)"
+
+case "${choice}" in
+  "Play/Pause") playerctl play-pause ;;
+  "Next") playerctl next ;;
+  "Previous") playerctl previous ;;
+  "Stop") playerctl stop ;;
+  "Open Spotify") hyprctl dispatch exec spotify >/dev/null ;;
+  "Toggle SwayNC") swaync-client -t ;;
+  *) exit 0 ;;
+esac
