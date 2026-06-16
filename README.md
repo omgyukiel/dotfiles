@@ -12,6 +12,7 @@ Before installing on a new machine, read [PREREQUISITES.md](PREREQUISITES.md).
 - `home/.config/hyde/config.toml` - HyDE user config overrides.
 - `home/.config/kitty/kitty.conf` - Kitty user config.
 - `home/.config/nvim` - LazyVim starter config and lockfile.
+- `home/.config/pypr/config.toml` - Pyprland scratchpad/dropdown config.
 - `home/.config/swaync/config.json` - SwayNC notification center config.
 - `home/.config/swaync/style.css` - SwayNC notification center theme.
 - `home/.config/zsh/user.zsh` - HyDE Zsh user customizations.
